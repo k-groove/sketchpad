@@ -1,0 +1,33 @@
+body {
+
+}
+/*centers images in carousel*/
+.carousel-inner > .item > img,.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+      }
+.active{
+  font-family: 'Rock Salt', cursive;
+   font-size:15px;
+ } 
+#navbar li{
+text-align: center;
+}
+  .navbar{
+    /*fixes navbar flicker*/
+  -webkit-backface-visibility: hidden;
+  }
+  h1{
+  text-align: center;
+  padding-top: 80px;  
+ font-family: 'Rock Salt', cursive;
+   font-size:50px;
+    
+}
+h5{
+  text-align: center;  
+  padding-bottom: 20px;
+ font-family: 'Rock Salt', cursive;
+   font-size:20px;
+    
+}
