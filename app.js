@@ -5,12 +5,14 @@ $(document).ready(function() {
     var gridSize = 50;
     var grid = gridSize*gridSize;
     var blockSize = 960/gridSize;
+    var $blocks = $('.blocks');
 
     function drawGrid(grid){
+
     for (var x = 0; x < grid; x++) {
         $('.inner').append('<div class="blocks"></div>');
     }
-         $('.blocks').css({'display':'inline-block','float':'left','width':blockSize+"px",
+        $('.blocks').css({'display':'inline-block','float':'left','width':blockSize+"px",
              'height':blockSize+"px",'outline':'2px solid','background':'blue'});
 
     $('.blocks')
@@ -24,6 +26,7 @@ $(document).ready(function() {
         });
     };
     $(".startButton").click(function(){
+        $('.inner').empty();
         drawGrid(grid);
     })
     $(".sizeButton").click(function(){
@@ -32,8 +35,7 @@ $(document).ready(function() {
         gridSize = userSize;
         blockSize = 960/userSize;
         drawGrid(userSize*userSize);
-        //var testing = prompt("grid size",gridSize.toString());
-        var testing2 = prompt("grid size",blockSize.toString());
+
 
     });
 
